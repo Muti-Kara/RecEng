@@ -1,3 +1,0 @@
-For this type of recommenders we should have something similar to plot, tags, authors of contributors data, which we will recommend. 
-After having data like these, this recommendation task is very similar to a document clasification task. 
-Here we just vectorize the data we have (we need a mathematical representation of this data) and sort it with one of the similarity measurements.
