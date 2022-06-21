@@ -30,25 +30,6 @@ labels = [
 	0,
 ]
 ##	
-text_dataset = tf.data.Dataset.from_tensor_slices((sentences, labels))
-for input, label in text_dataset:
-	print(input)
-	print(label)
-	print("========")
-"""
-	tf.Tensor(b'Bu iyi bir \xc5\x9fey.', shape=(), dtype=string)
-	tf.Tensor(b'good', shape=(), dtype=string)
-	========
-	tf.Tensor(b'Pek be\xc4\x9fenmedim.', shape=(), dtype=string)
-	tf.Tensor(b'bad', shape=(), dtype=string)
-	========
-	tf.Tensor(b'G\xc3\xbczel ve iyi bence.', shape=(), dtype=string)
-	tf.Tensor(b'good', shape=(), dtype=string)
-	========
-	tf.Tensor(b'K\xc3\xb6t\xc3\xbc oldu\xc4\x9fundan be\xc4\x9fenmedim.', shape=(), dtype=string)
-	tf.Tensor(b'bad', shape=(), dtype=string)
-"""
-##	
 from keras.layers import TextVectorization
 vocab_size = 20
 max_len = 5
